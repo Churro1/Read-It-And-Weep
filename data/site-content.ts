@@ -82,10 +82,6 @@ export const siteContent = {
       websiteUrl: "https://www.caffeibis.com/",
       logoPath: "/sponsors/cafeibis.png",
     },
-    {
-      name: "Crux Fuel",
-      websiteUrl: "https://example.com/crux",
-      logoPath: "/sponsors/crux-fuel.svg",
-    },
+    
   ] satisfies Sponsor[],
 } as const;
