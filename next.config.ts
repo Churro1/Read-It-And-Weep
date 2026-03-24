@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   output: "export",
-  // This tells Next.js to prepend /Read-It-And-Weep to all links and image src's
+  // This hardcodes the prefix for GitHub Pages
   basePath: "/Read-It-And-Weep",
   images: {
     unoptimized: true,
