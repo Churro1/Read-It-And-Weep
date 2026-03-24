@@ -87,11 +87,11 @@ export const siteContent = {
       websiteUrl: "https://www.oncrux.com/",
       logoPath: "/sponsors/oncrux.avif",
     },
-    {
-      name: "Als Sporting Goods",
-      websiteUrl: "https://www.als.com/",
-      logoPath: "/sponsors/als.svg",
-    },
+    // {
+    //   name: "Als Sporting Goods",
+    //   websiteUrl: "https://www.als.com/",
+    //   logoPath: "/sponsors/als.svg",
+    // },
     {
       name: "Vivian's Live Again",
       websiteUrl: "https://www.viviansliveagain.com/",
@@ -100,12 +100,12 @@ export const siteContent = {
     {
       name: "Rocky Talkie",
       websiteUrl: "https://rockytalkie.com/",
-      logoPath: "/sponsors/rockytalkie.avif",
+      logoPath: "/sponsors/rockytalkie2.avif",
     },
     {
       name: "Black Diamond",
       websiteUrl: "https://blackdiamondequipment.com/",
-      logoPath: "/sponsors/blackdiamond.jpg",
+      logoPath: "/sponsors/blackdiamond.png",
     },
     // {
     //   name: "NAME",
