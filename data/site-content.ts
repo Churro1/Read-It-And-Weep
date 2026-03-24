@@ -82,6 +82,35 @@ export const siteContent = {
       websiteUrl: "https://www.caffeibis.com/",
       logoPath: "/sponsors/cafeibis.png",
     },
-    
+    {
+      name: "ONCRUX",
+      websiteUrl: "https://www.oncrux.com/",
+      logoPath: "/sponsors/oncrux.avif",
+    },
+    {
+      name: "Als Sporting Goods",
+      websiteUrl: "https://www.als.com/",
+      logoPath: "/sponsors/als.svg",
+    },
+    {
+      name: "Vivian's Live Again",
+      websiteUrl: "https://www.viviansliveagain.com/",
+      logoPath: "/sponsors/viviansliveagain.webp",
+    },
+    {
+      name: "Rocky Talkie",
+      websiteUrl: "https://rockytalkie.com/",
+      logoPath: "/sponsors/rockytalkie.avif",
+    },
+    {
+      name: "Black Diamond",
+      websiteUrl: "https://blackdiamondequipment.com/",
+      logoPath: "/sponsors/blackdiamond.svg",
+    },
+    // {
+    //   name: "NAME",
+    //   websiteUrl: "LINK",
+    //   logoPath: "/sponsors/IMAGE",
+    // },
   ] satisfies Sponsor[],
 } as const;
