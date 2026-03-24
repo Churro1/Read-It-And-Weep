@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="120" viewBox="0 0 360 120" role="img" aria-labelledby="title desc">
+  <title id="title">Crux Fuel</title>
+  <desc id="desc">Placeholder sponsor logo for Crux Fuel.</desc>
+  <rect width="360" height="120" rx="12" fill="#FFF4E6" />
+  <path d="M46 82 L62 36 L78 82 Z" fill="#EA580C" />
+  <circle cx="62" cy="56" r="8" fill="#FFFFFF" />
+  <text x="98" y="66" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#7C2D12">CRUX FUEL</text>
+</svg>

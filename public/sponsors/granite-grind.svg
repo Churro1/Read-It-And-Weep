@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="120" viewBox="0 0 360 120" role="img" aria-labelledby="title desc">
+  <title id="title">Granite Grind</title>
+  <desc id="desc">Placeholder sponsor logo for Granite Grind.</desc>
+  <rect width="360" height="120" rx="12" fill="#F3F4F6" />
+  <rect x="28" y="30" width="56" height="56" rx="10" fill="#334155" />
+  <path d="M38 74 L56 38 L74 74 Z" fill="#94A3B8" />
+  <text x="98" y="66" font-size="24" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#0F172A">GRANITE GRIND</text>
+</svg>
