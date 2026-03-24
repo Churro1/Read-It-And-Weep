@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Read it and Weep Stream Site
 
-## Getting Started
+Official event website for the Read it and Weep Boulder Competition.
 
-First, run the development server:
+The site includes:
+
+- Event title and intro
+- Livestream section for YouTube iframe embed
+- Editable schedule section
+- Heat replay download cards
+- Sponsor logo + link section
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Content Management
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Update schedule
 
-## Learn More
+Edit [data/schedule.json](data/schedule.json) and adjust entries.
 
-To learn more about Next.js, take a look at the following resources:
+Each entry uses:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `date`
+- `time`
+- `heat`
+- `details`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Add livestream iframe URL
 
-## Deploy on Vercel
+Edit [data/site-content.ts](data/site-content.ts):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Set `youtubeEmbedUrl` to a full YouTube embed URL.
+- Keep format like `https://www.youtube.com/embed/VIDEO_ID`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If no valid embed URL is set, the stream section shows a placeholder and TODO message.
+
+### Publish heat downloads
+
+Edit [data/site-content.ts](data/site-content.ts) in `heatDownloads`:
+
+- Set `status` to `"available"`.
+- Add `fileUrl` with your hosted replay file URL.
+
+Cards without valid links remain disabled by design.
+
+### Update sponsors
+
+Edit [data/site-content.ts](data/site-content.ts) in `sponsors`:
+
+- Update `name`
+- Update `websiteUrl` (HTTPS preferred)
+- Update `logoPath`
+
+Drop logo files in [public/sponsors](public/sponsors).
+
+## Security Notes
+
+- External links use safe target/rel attributes.
+- YouTube iframe accepts only approved YouTube embed hosts.
+- HTTP response headers are configured in [next.config.ts](next.config.ts).
+
+## Quality Checks
+
+```bash
+npm run lint
+npm run build
+```
+# Read-It-And-Weep
