@@ -15,7 +15,7 @@ export const siteContent = {
   eventTitle: "Read it and Weep Boulder Competition",
   eventSubtitle: "Hosted at Utah State University",
   streamTodo:
-    "TODO: Add your YouTube embed URL in data/site-content.ts once the stream link is finalized.",
+    "This will be the live stream of the competition once it's linked. Check back here on March 27th and 28th to watch the action unfold! In the meantime, make sure to follow our social media channels for updates and announcements.",
   youtubeEmbedUrl: "",
 
 //   HEATS - UPDATE WITH REAL HEAT NAMES, STATUSES, DESCRIPTIONS, AND FILE URLS AS THEY BECOME AVAILABLE
@@ -73,14 +73,14 @@ export const siteContent = {
 //   SPONSORS - UPDATE WITH REAL SPONSORS AND LOGOS
   sponsors: [
     {
-      name: "Summit Supply Co.",
-      websiteUrl: "https://example.com/summit",
-      logoPath: "/sponsors/summit-supply.svg",
+      name: "Avant Climbing",
+      websiteUrl: "https://www.avantclimbing.com",
+      logoPath: "/sponsors/avant.png",
     },
     {
-      name: "Granite Grind",
-      websiteUrl: "https://example.com/granite",
-      logoPath: "/sponsors/granite-grind.svg",
+      name: "Cafe Ibis",
+      websiteUrl: "https://www.caffeibis.com/",
+      logoPath: "/sponsors/cafeibis.png",
     },
     {
       name: "Crux Fuel",
