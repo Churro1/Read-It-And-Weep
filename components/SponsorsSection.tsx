@@ -26,10 +26,6 @@ export function SponsorsSection({ sponsors }: SponsorsSectionProps) {
       </h2>
       <p className="mt-2 text-sm text-slate-600">These partners help make Read it and Weep possible. Please visit and support them.</p>
 
-      <div className="mt-3 inline-flex rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-cyan-800">
-        {sortedSponsors.length} Sponsors
-      </div>
-
       <div className="sponsor-marquee mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-50/70 p-3">
         <ul className="sponsor-marquee-track flex w-max items-stretch gap-3">
           {marqueeSponsors.map((sponsor, index) => {

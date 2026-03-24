@@ -35,9 +35,6 @@ export function StreamSection({ embedUrl, todoMessage }: StreamSectionProps) {
         <h2 id="stream-title" className="text-2xl font-extrabold text-slate-950 sm:text-3xl">
           Live Stream
         </h2>
-        <span className="rounded-full border border-red-200 bg-red-50 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-red-700">
-          YouTube
-        </span>
       </div>
 
       {safeEmbedUrl ? (
