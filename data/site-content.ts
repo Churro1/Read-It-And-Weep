@@ -100,7 +100,7 @@ export const siteContent = {
     {
       name: "Rocky Talkie",
       websiteUrl: "https://rockytalkie.com/",
-      logoPath: "/sponsors/rockytalkie2.avif",
+      logoPath: "/sponsors/rockytalkie.avif",
     },
     {
       name: "Black Diamond",
