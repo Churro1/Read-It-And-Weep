@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import type { Sponsor } from "@/data/site-content";
 
 type SponsorsSectionProps = {
@@ -47,8 +45,7 @@ export function SponsorsSection({ sponsors }: SponsorsSectionProps) {
                 aria-label={`Visit ${sponsor.name}`}
               >
                 <div className="flex h-12 items-center justify-center rounded-md border border-slate-200 bg-white px-2">
-                  <Image src={sponsor.logoPath} alt={`${sponsor.name} logo`} width={120} height={32} className="h-auto w-auto object-contain" />
-                </div>
+                  <img src={`/Read-It-And-Weep${sponsor.logoPath}`} alt={`${sponsor.name} logo`} width={120} height={32} loading="lazy" className="h-auto w-auto object-contain" />                </div>
                 <p className="mt-2 line-clamp-2 text-center text-xs font-semibold text-slate-800 transition-colors group-hover:text-cyan-900">
                   {sponsor.name}
                 </p>
@@ -58,7 +55,7 @@ export function SponsorsSection({ sponsors }: SponsorsSectionProps) {
             <li key={`${sponsor.name}-${index}`} className="flex">
               <article className="flex w-48 shrink-0 flex-col rounded-lg border border-slate-200 bg-white px-3 py-2 shadow-sm">
                 <div className="flex h-12 items-center justify-center rounded-md border border-slate-200 bg-white px-2">
-                  <Image src={sponsor.logoPath} alt={`${sponsor.name} logo`} width={120} height={32} className="h-auto w-auto object-contain" />
+                  <img src={`/Read-It-And-Weep${sponsor.logoPath}`} alt={`${sponsor.name} logo`} width={120} height={32} loading="lazy"className="h-auto w-auto object-contain"/>
                 </div>
                 <p className="mt-2 line-clamp-2 text-center text-xs font-semibold text-slate-700">{sponsor.name}</p>
               </article>
