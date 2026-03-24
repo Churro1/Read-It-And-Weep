@@ -105,7 +105,7 @@ export const siteContent = {
     {
       name: "Black Diamond",
       websiteUrl: "https://blackdiamondequipment.com/",
-      logoPath: "/sponsors/blackdiamond.svg",
+      logoPath: "/sponsors/blackdiamond.jpg",
     },
     // {
     //   name: "NAME",
