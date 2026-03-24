@@ -1,14 +1,8 @@
-import type { NextConfig } from "next";
-
-const basePath =
-  process.env.PAGES_BASE_PATH && process.env.PAGES_BASE_PATH !== "/"
-    ? process.env.PAGES_BASE_PATH
-    : "";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export",
-  basePath,
-  assetPrefix: basePath ? `${basePath}/` : undefined,
+  // This tells Next.js to prepend /Read-It-And-Weep to all links and image src's
+  basePath: "/Read-It-And-Weep",
   images: {
     unoptimized: true,
   },
