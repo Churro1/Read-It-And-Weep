@@ -1,4 +1,7 @@
+"use client";
+
 import type { Sponsor } from "@/data/site-content";
+import { useRef, useState } from "react";
 
 type SponsorsSectionProps = {
   sponsors: Sponsor[];
@@ -19,15 +22,68 @@ export function SponsorsSection({ sponsors }: SponsorsSectionProps) {
   );
   const marqueeSponsors = [...sortedSponsors, ...sortedSponsors];
 
+  const trackRef = useRef<HTMLUListElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true);
+    setStartX(e.pageX - (trackRef.current?.offsetLeft || 0));
+    setScrollLeft(trackRef.current?.scrollLeft || 0);
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setIsDragging(true);
+    setStartX(e.touches[0].pageX - (trackRef.current?.offsetLeft || 0));
+    setScrollLeft(trackRef.current?.scrollLeft || 0);
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging || !trackRef.current) return;
+    e.preventDefault();
+    const x = e.pageX - (trackRef.current?.offsetLeft || 0);
+    const walk = (x - startX) * 1.5;
+    trackRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging || !trackRef.current) return;
+    const x = e.touches[0].pageX - (trackRef.current?.offsetLeft || 0);
+    const walk = (x - startX) * 1.5;
+    trackRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
+
   return (
     <section id="sponsors" aria-labelledby="sponsors-title" className="rounded-2xl border border-slate-200 bg-white/90 p-6 shadow-md shadow-slate-900/5 backdrop-blur sm:p-8">
       <h2 id="sponsors-title" className="text-2xl font-extrabold text-slate-950 sm:text-3xl">
         Thank You to Our Sponsors
       </h2>
-      <p className="mt-2 text-sm text-slate-600">These partners help make Read it and Weep possible. Please visit and support them.</p>
+      <p className="mt-2 text-sm text-slate-600">These partners help make Read it and Weep possible. Drag, swipe, or click on a logo to visit and support them!</p>
 
-      <div className="sponsor-marquee mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-50/70 p-3">
-        <ul className="sponsor-marquee-track flex w-max items-stretch gap-3">
+      <div 
+        className="sponsor-marquee mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-50/70 p-3 cursor-grab active:cursor-grabbing"
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
+        <ul 
+          ref={trackRef}
+          className="sponsor-marquee-track flex w-max items-stretch gap-3 scroll-smooth"
+          style={{ scrollBehavior: isDragging ? "auto" : "smooth" }}
+        >
           {marqueeSponsors.map((sponsor, index) => {
           const isSafeUrl = hasSafeWebsiteUrl(sponsor.websiteUrl);
 
