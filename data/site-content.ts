@@ -117,6 +117,11 @@ export const siteContent = {
       websiteUrl: "https://www.redbull.com/us-en",
       logoPath: "/sponsors/redbull.svg",
     },
+    {
+      name: "Ailrys",
+      websiteUrl: "https://www.ailrys.com/",
+      logoPath: "/sponsors/ailrys.avif",
+    },
     // {
     //   name: "NAME",
     //   websiteUrl: "LINK",
