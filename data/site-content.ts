@@ -107,6 +107,16 @@ export const siteContent = {
       websiteUrl: "https://blackdiamondequipment.com/",
       logoPath: "/sponsors/blackdiamond.png",
     },
+    {
+      name: "Mountain Panacea",
+      websiteUrl: "https://mountainpanacea.com/",
+      logoPath: "/sponsors/mountainpanacea.png",
+    },
+    {
+      name: "Redbull",
+      websiteUrl: "https://www.redbull.com/us-en",
+      logoPath: "/sponsors/redbull.svg",
+    },
     // {
     //   name: "NAME",
     //   websiteUrl: "LINK",
