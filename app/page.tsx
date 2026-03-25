@@ -49,6 +49,11 @@ export default function Home() {
       <footer className="relative z-10 border-t border-slate-200 bg-white/75 py-6 backdrop-blur">
         <div className="mx-auto max-w-6xl px-4 text-sm text-slate-700 sm:px-6 lg:px-8">
           <p>Read it and Weep Boulder Competition. Hosted at Utah State University.</p>
+          <p>Website built by Charlie Miner. Feel free to reach out! 
+            <a href="charliejminer@gmail.com" className="ml-1 font-medium text-cyan-700 underline hover:text-cyan-900">
+              charliejminer@gmail.com
+            </a>
+          </p>
         </div>
       </footer>
     </div>
