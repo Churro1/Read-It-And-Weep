@@ -41,7 +41,7 @@ export function SponsorsSection({ sponsors }: SponsorsSectionProps) {
                 aria-label={`Visit ${sponsor.name}`}
               >
                 <div className="flex h-12 items-center justify-center rounded-md border border-slate-200 bg-white px-2">
-                  <img src={`/Read-It-And-Weep${sponsor.logoPath}`} alt={`${sponsor.name} logo`} width={120} height={32} loading="lazy" className="h-auto w-auto object-contain" />                </div>
+                  <img src={`/Read-It-And-Weep${sponsor.logoPath}`} alt={`${sponsor.name} logo`} width={150} height={150} loading="lazy" className="h-auto w-auto object-contain" /></div>
                 <p className="mt-2 line-clamp-2 text-center text-xs font-semibold text-slate-800 transition-colors group-hover:text-cyan-900">
                   {sponsor.name}
                 </p>
