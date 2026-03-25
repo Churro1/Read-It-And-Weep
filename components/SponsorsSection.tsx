@@ -67,7 +67,7 @@ export function SponsorsSection({ sponsors }: SponsorsSectionProps) {
       <h2 id="sponsors-title" className="text-2xl font-extrabold text-slate-950 sm:text-3xl">
         Thank You to Our Sponsors
       </h2>
-      <p className="mt-2 text-sm text-slate-600">These partners help make Read it and Weep possible. Drag, swipe, or click on a logo to visit and support them!</p>
+      <p className="mt-2 text-sm text-slate-600">These partners help make Read it and Weep possible. Please consider visiting and supporting them!</p>
 
       <div 
         className="sponsor-marquee mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-50/70 p-3 cursor-grab active:cursor-grabbing"
