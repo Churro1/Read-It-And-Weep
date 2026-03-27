@@ -1,5 +1,6 @@
 import { HeatDownloadsSection } from "@/components/HeatDownloadsSection";
 import { HeroSection } from "@/components/HeroSection";
+import { NameSubmissionSection } from "@/components/NameSubmissionSection";
 import { ScheduleSection } from "@/components/ScheduleSection";
 import { SponsorsSection } from "@/components/SponsorsSection";
 import { StreamSection } from "@/components/StreamSection";
@@ -12,6 +13,7 @@ const navigationLinks = [
   { href: "#schedule", label: "Schedule" },
   { href: "#downloads", label: "Downloads" },
   { href: "#sponsors", label: "Sponsors" },
+  { href: "#name-submit", label: "Submit Name" },
 ] as const;
 
 const schedule = scheduleData as ScheduleEntry[];
@@ -44,6 +46,7 @@ export default function Home() {
         <ScheduleSection schedule={schedule} />
         <SponsorsSection sponsors={siteContent.sponsors} />
         <HeatDownloadsSection downloads={siteContent.heatDownloads} />
+        <NameSubmissionSection />
       </main>
 
       <footer className="relative z-10 border-t border-slate-200 bg-white/75 py-6 backdrop-blur">
