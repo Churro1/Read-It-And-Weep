@@ -15,7 +15,7 @@ export const siteContent = {
   eventTitle: "Read it and Weep Boulder Competition",
   eventSubtitle: "Hosted at Utah State University",
   streamTodo: "",
-  youtubeEmbedUrl: "https://www.youtube.com/embed/live_stream?channel=W28w9V9qFRtfAkUYwhpM-Q",
+  youtubeEmbedUrl: "https://www.youtube.com/embed/live_stream?channel=UCW28w9V9qFRtfAkUYwhpM-Q",
 
 //   HEATS - UPDATE WITH REAL HEAT NAMES, STATUSES, DESCRIPTIONS, AND FILE URLS AS THEY BECOME AVAILABLE
   heatDownloads: [
