@@ -65,7 +65,7 @@ export function NameSubmissionSection() {
       <div className="space-y-4">
         <h2 className="font-display text-4xl leading-none text-slate-900">Name Submission</h2>
         <p className="max-w-2xl text-sm text-slate-700 sm:text-base">
-          Enter your name below and submit it to the organizer list.
+          Enter your name below and submit it to the organizer list. You must be here in person when we call names to recieve your prize!
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row sm:items-start">
