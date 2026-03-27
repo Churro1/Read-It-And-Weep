@@ -14,9 +14,8 @@ export type Sponsor = {
 export const siteContent = {
   eventTitle: "Read it and Weep Boulder Competition",
   eventSubtitle: "Hosted at Utah State University",
-  streamTodo:
-    "This will be the live stream of the competition once it's linked. Check back here on March 27th and 28th to watch the action unfold! In the meantime, make sure to follow our social media channels for updates and announcements.",
-  youtubeEmbedUrl: "",
+  streamTodo: "",
+  youtubeEmbedUrl: "https://www.youtube.com/embed/5ULbusZRHiw",
 
 //   HEATS - UPDATE WITH REAL HEAT NAMES, STATUSES, DESCRIPTIONS, AND FILE URLS AS THEY BECOME AVAILABLE
   heatDownloads: [
