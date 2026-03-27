@@ -8,7 +8,7 @@ type SubmissionState =
   | { type: "error"; message: string };
 
 export function NameSubmissionSection() {
-  const googleScriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+  const googleScriptUrl = "https://script.google.com/macros/s/AKfycbz6u49UTguF5KTi4l-UwxdEbQ-q-qzqoJLnmLXmN83XcxAmAyVHXzvehVCtnNcno15qVQ/exec";
   const [name, setName] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionState, setSubmissionState] = useState<SubmissionState>({ type: "idle", message: "" });
