@@ -54,7 +54,7 @@ export function StreamSection({ embedUrl, todoMessage }: StreamSectionProps) {
         </div>
       ) : (
         <div className="rounded-xl border border-dashed border-slate-300 bg-slate-100/70 p-8 text-center">
-          <p className="text-base font-semibold text-slate-800">Stream is not linked yet.</p>
+          <p className="text-base font-semibold text-slate-800">Come back next year for more action!</p>
           <p className="mx-auto mt-2 max-w-xl text-sm text-slate-600">{todoMessage}</p>
         </div>
       )}
